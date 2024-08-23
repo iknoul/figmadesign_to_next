@@ -1,0 +1,22 @@
+@keyframes slide-left {
+    0% {
+      transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+      transform: translateX(-100%); /* Slide off-screen to the left */
+    }
+  }
+
+.slidingText{
+    width: 100%; 
+    overflow-x: hidden;
+    white-space: nowrap; 
+}
+.slidingText p{
+    white-space: nowrap;
+    animation: slide-left 15s linear infinite;
+    color: rgba(86, 86, 86, 0.45);
+    font-size: 10px;
+    font-weight: 400;
+
+}
