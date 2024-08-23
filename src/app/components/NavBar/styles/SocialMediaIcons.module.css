@@ -1,0 +1,9 @@
+.socialMediaIcons{
+    cursor: pointer;
+    width: 100%;
+    height: 1.3rem;
+    display: flex;
+    gap: 1.33rem;
+    justify-content: end;
+
+}

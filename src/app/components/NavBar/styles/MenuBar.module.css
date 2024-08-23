@@ -1,0 +1,100 @@
+.menuBar{
+    display: flex;
+    align-items: center;
+    gap: 2.66rem;
+    font-size: calc(1rem/4*5);
+    font-weight: 300;
+}
+
+.menuBar a{
+    text-decoration: none;
+    color: black;
+}
+.menuBar a:hover{
+    color: rgba(148, 43, 43, 0.753);
+}
+.userlogo, .loginIcon{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem/3;
+    padding-bottom: 1rem/3;
+    padding-right: 16px;
+    border-radius: 16px;
+    background-color: black;
+    color: white;
+
+}
+.userlogo p, .loginIcon p{
+    margin: 0;
+}
+.userlogo .firstName{
+    width: calc(1rem/4*6);
+    height: calc(1rem/4*6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin: 0                   4px;
+    font-weight: 500;
+    justify-content: center ;
+    background-color: white;
+    color: black;
+
+}
+.closeIcon, .loginIcon{
+    display: none;
+}
+
+@media screen and (max-width:1180px) {
+    .closeIcon, .loginIcon{
+        display:  flex;
+    }
+    
+    .menuBar{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 15px;
+        padding-right: 13px;
+        padding-left: 1.75rem;
+        width: 25rem;
+        flex-direction: column;
+        align-items: start;
+        background-color: blue;
+        z-index: 10;
+    }
+    .menuBar a{
+        display: flex;
+        width: 100%;    
+        height: 5rem;
+        padding-left: .5rem;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+       
+    }  
+    .noBorderBottom{
+        border-bottom: none !important;
+    }
+    .menuBar a:hover{
+        color: white;
+        background-color: rgba(76, 75, 75, 0.466);
+    }
+    .closeIcon{
+        width: 100%;
+        padding-bottom: .5rem;
+        display: flex;
+        justify-content: end;
+    }
+    .loginIcon{
+        padding-left: 1.66rem;
+        padding-right: 1.66rem;
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+
+    }
+    .userlogo, .notificationIcon{
+        display: none !important;
+    }
+}
+

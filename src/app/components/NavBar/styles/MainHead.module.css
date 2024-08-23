@@ -1,0 +1,22 @@
+.logo{
+    display: flex;
+    gap: 2.8rem;
+}
+.mainHead{
+    display: flex;
+    justify-content: space-between;
+}
+.organisationTitle{
+    width: 22.9rem;
+}
+.logo{
+    width: 3.75rem;
+}
+@media screen and (max-width:800px) {
+    .organisationTitle{
+        width: 10rem;
+    }
+    .logo{
+        width: 1.66rem;
+    }
+}
