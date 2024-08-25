@@ -107,7 +107,7 @@ const SubscribtionForm = ()=>{
             {formErrors.email && <div className={styles.error}>{formErrors.email}</div>}
             <div className='error'></div>
         </div>
-        <p>Don't miss out! enter your email and your name, then hit subscribe to unlock a world of special offers and details.</p>
+        <p>Don&apos;t miss out! enter your email and your name, then hit subscribe to unlock a world of special offers and details.</p>
         <ButtonOne width='100%' height='4.7rem' callBackFunction={handleButtonClick}>Subscribe</ButtonOne>
     </div>)
 }
