@@ -5,10 +5,10 @@ import AppPromotion from './AppPromotion'
 import InputFields from './InputFields'
 import TypeSelector from './TypeSelector'
 
-const BookCarMain = ()=>{
-    
-    const[differentDropOff, setDifferentDropOff] = useState(false)
+const BookCarMain:React.FC = ()=>{
 
+    //for conditionally rendering the different drop off selector in childrens 
+    const[differentDropOff, setDifferentDropOff] = useState(false)
 
     return(
     <div className={style.bookCarMain}>

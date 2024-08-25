@@ -6,19 +6,23 @@ const Locations = ()=>{
 
 
     return( 
+    //dynamically adding items to locations 
     <section className={styles.location} id="locations">
         <h1>Locations</h1>
+
         <div className={styles.locations}>
             {
                 Areas.map((item, index)=>{
                     return(
                     <div className={styles.locationItem}>
+
                         <Image 
                             src={'/icons/locationRed.svg'}
                             alt='locations'
                             width={18}
                             height={18}
                         />
+
                         <p>{item}</p>
                     </div>)
                 })

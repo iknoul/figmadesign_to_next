@@ -15,7 +15,7 @@ interface MyComponentProps {
     setBookNowVisible?: Function;
 };
 
-
+// all input fields for book cab alighned here
 const InputFields: React.FC<MyComponentProps>= ({differentDropOff, setBookNowVisible = ()=>{}})=>{
 
     const [selectedDate, setSelectedDate] = useState('');

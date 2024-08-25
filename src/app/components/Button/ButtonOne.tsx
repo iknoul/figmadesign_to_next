@@ -12,6 +12,8 @@ interface ButtonProps {
     children?: string;
     onlyMobile?:boolean;
   }
+
+// conditionally adding classes and  style it dynamically
 const ButtonOne = ({onlyMobile, bgColor, borderColor, color, width, height, callBackFunction, children}: ButtonProps)=>{
 
     const className = `${styles.button} ${onlyMobile ? styles.onlyMobile: ''} ${bgColor ? styles[`bg${bgColor}`] : ''} ${color ? styles[color] : ''} ${borderColor ? styles[borderColor] : ''}`;

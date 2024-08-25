@@ -22,6 +22,7 @@ const Footer = ()=>{
     return(
     <div className={styles.footer}>
         <div className={styles.top} id="footer">
+            {/* this logo for mobile view */}
             <div className={styles.logo}>
                 <Image 
                     src={orgLogo}
@@ -29,12 +30,14 @@ const Footer = ()=>{
                 />
                 <p>Member of the Al_Habtoor Group</p>
             </div>
+
             <div className={styles.orgLogo}>
                 <Image 
                     src={orgTitle}
                     alt='org title'
                 />
             </div>
+
             <div className={styles.navs}>
                <div className={styles.topNavs}>
                     {
@@ -47,7 +50,9 @@ const Footer = ()=>{
                         })
                     }
                </div>
+
                <p><strong>Al Habtoor Companies</strong></p>
+
                 <div className={styles.bottomNavs}>
                 {
                     footerNavigationDataB.map((item, index)=>{
@@ -60,8 +65,10 @@ const Footer = ()=>{
                 }
                 </div>
             </div>
+
             <div className={styles.followUs}>
                 <h3>FOLLOW US ON</h3>
+
                 <div className={styles.socialLinks}>
                     <Image 
                         src={facebook}
@@ -84,6 +91,7 @@ const Footer = ()=>{
                         alt='yourube icon'
                     />
                 </div>
+
                 <div className={styles.cards}>
                     <Image 
                         src={secureCard1}
@@ -94,10 +102,14 @@ const Footer = ()=>{
                         alt='secureCard2 icon'
                     />
                 </div>
+
             </div>
         </div>
+
         <div className={styles.orgCompaniesMobile}>
+
             <p><strong>Al Habtoor Companies</strong></p>
+
             {
                 footerNavigationDataB.map((item, index)=>{
 
@@ -107,6 +119,7 @@ const Footer = ()=>{
                     </a>)
                 })
             }
+            
             <div className={styles.orgCompaniesMobileCard}>
                 <Image 
                     src={orgCompaniesMobileImage}

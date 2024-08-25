@@ -13,7 +13,7 @@ const BookCarMobile = ()=>{
 
     const  menuRef = useRef<HTMLDivElement>(null)
 
-
+    // for toggle the visibility of inputs fields
     const handleOnClick=()=>{
         if(bookNowVisible){
             setBookNowVisible(false)
@@ -23,11 +23,13 @@ const BookCarMobile = ()=>{
         }
     }
 
+    // hide the input fields if clicked outside
     const handleClickOutSide = (event:MouseEvent)=>{
         if(menuRef.current && event.target instanceof Node && !menuRef.current.contains(event.target)){
             setBookNowVisible(false)
         }
     }
+    // add event listener on dom loaded
     useEffect(()=>{
         document.addEventListener('mousedown', handleClickOutSide)
 

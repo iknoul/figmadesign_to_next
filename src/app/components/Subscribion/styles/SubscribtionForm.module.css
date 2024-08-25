@@ -41,6 +41,17 @@
     height: 57px;
 }
 
+.error{
+  color: red;
+}
+.validInput {
+  background-color: rgba(0, 128, 0, 0.176) !important;
+}
+
+.invalidInput {
+  background-color: rgba(255, 67, 42, 0.176) !important;
+}
+
 @media screen and (max-width :1180px) {
   .inputs{
     width: 100%;
@@ -49,4 +60,5 @@
   .inputs input{
     width: 100%;
   }
+  
 }

@@ -17,7 +17,7 @@ const LocationPickup: React.FC<MyComponentProps>= ({textContent = "Pick Up locat
     const [optionsVisible, setOptionsVisible] = useState(false)
     const  menuRef = useRef<HTMLDivElement>(null)
 
-    
+    // set selected option to useState
     const handleOnClick =(e:React.MouseEvent<HTMLButtonElement>)=>{
         
         const target = e.target as HTMLButtonElement;
