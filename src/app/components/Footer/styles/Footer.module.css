@@ -1,0 +1,167 @@
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+} 
+.footer .top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 64px 24px 64px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.502);
+
+}
+.footer .top .logo{
+    display: flex;
+    flex-direction: column;
+}
+.footer .top .logo img{
+    width: 56px;
+}
+.footer .orgLogo{
+    display: none;
+}
+.footer .top p{   
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+
+}
+.footer .top .logo p{
+    width: 105px;
+    font-size: 12px;
+}
+.footer .top .navs{
+    width: 565px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.footer .top .navs a, .footer .orgCompaniesMobile a{ 
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: left;
+}
+.footer .top .navs .topNavs, .footer .top .navs .bottomNavs{
+    width: 100%;
+    display: flex;
+    gap: 21px;
+    flex-wrap: wrap;
+}
+.footer .top .navs .topNavs .navItem{
+    width: 100px;
+    min-width: fit-content;  
+}
+.footer .top .navs .topNavs .navRow{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer .top .followUs{
+    width: 153px;
+}
+.footer .top .followUs h3{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.cards{
+    display: flex;
+    gap: 21px;
+    align-items: center;
+}
+.socialLinks{
+   width: 138px;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 24px;
+}
+.footer .bottom{   
+    width: 100%;
+    height: 69px;
+    margin-top:1px solid rgba(255, 255, 255, 0.502);
+    padding-top: 24px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+.footer .orgCompaniesMobile{
+    display: none;
+}
+.orgCompaniesMobileCard{
+    display: flex;
+    padding: .5rem;
+    width:fit-content;
+    border-radius: .33rem;
+    justify-content: center;
+    background-color: white;
+
+}
+@media screen and (max-width:935px){
+    .footer{
+        background-color: #D9D9D9;
+    }
+    .footer .top{
+        border-bottom: none;
+        padding-right: 1.33rem;
+        padding-left: 1.33rem;
+    }
+    .footer .top .logo{
+        display: none;
+    }
+    .footer .orgLogo{
+        display: block;
+        position: absolute;
+    }
+    .footer .top .navs{
+        width: 100%;
+        margin-top: 77px;
+        padding: 0 36px;
+        justify-content: center;
+
+    }
+    .footer .top .navs a{
+        align-items: center;
+        justify-content: center;
+    }
+    .footer .top .navs strong,  .footer .top .navs div:last-child{
+        display: none;
+    }
+    .footer .orgCompaniesMobile{
+        color: white;
+        width: 100%;
+        padding: 22px 36px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 12px;
+        column-gap: 34px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.502);
+        background-color: black;     
+    }
+    .footer .orgCompaniesMobile p{
+        text-align: center;
+        width: 100%;
+    }
+    .footer .followUs{
+        position: absolute;
+        right: 2.8rem;
+    }
+    .footer .followUs h3,.footer .cards{
+        display: none;
+    }
+    .footer .bottom{
+        background-color: #000;
+    }
+}

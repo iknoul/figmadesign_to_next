@@ -1,0 +1,67 @@
+ .rentSteps{
+    margin-top: 3rem;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .rentSteps h1{
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+ .rentSteps .steps{
+    display: flex;
+    gap: 50px;
+}
+ .rentSteps .stepItem{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+ .rentSteps .stepItem img{
+    width: 64px;
+}
+ .rentSteps .step{
+    border: 1px solid black;
+    max-width: 350px;
+    height: 178px;
+    padding: 16px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+
+ .rentSteps .step p{
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.5px;
+    padding-bottom: 16px;
+    
+}
+@media screen and (max-width:935px){
+    .rentSteps{
+        padding: 0 32px;
+    }
+     .rentSteps .steps{
+        flex-direction: column;
+        align-items: center;
+    } 
+    .rentSteps .step{
+        width: 328px;
+    }
+}
+
+@media screen and (max-width: 480px){
+   .rentSteps{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

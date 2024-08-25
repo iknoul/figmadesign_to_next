@@ -1,0 +1,34 @@
+.inputs{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    gap: 2rem;
+}
+.inputs input{
+    /* margin-top: 13px; */
+    padding-left: .5rem;
+    margin-bottom: 23px;
+    width: 97.14%;
+    max-width: 40rem;
+    height: 45px;
+}
+.label{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.label p{
+    max-width: 20rem ;
+}
+
+@media screen and (max-width:1180px) {
+    .inputs{
+        width: 100%;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+    }
+    .label{
+        padding-right: 20%;
+    }
+}

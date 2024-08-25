@@ -1,0 +1,22 @@
+.dateTimePicker{
+    cursor: pointer;
+    width: 188px;
+    height: 42px; 
+    border-radius: 1.5rem;
+    padding: 0 16px;
+    background-color: rgb(254, 254, 254);
+    display: flex;
+    position: relative;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+@media screen and (max-width:1080px) {
+    .dateTimePicker{
+        width: 100%;
+        padding: 0;
+    }
+}

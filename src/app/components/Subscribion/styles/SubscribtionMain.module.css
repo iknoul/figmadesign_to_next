@@ -1,0 +1,50 @@
+.SubscribtionMain{
+    padding-left: 10.3rem;
+    margin-top: 3.33rem;
+    display: flex;
+    gap: 10.3rem;
+}
+.appLink{
+    width: 80%;
+    padding-right: 5rem;
+    padding-bottom: 5.33rem;
+    display: flex;
+    background-color: red;
+}
+.appLink p{
+    width: 100%;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media screen and (max-width:1180px) {
+    .SubscribtionMain{
+        width: 100%;
+        padding-left: 0px;
+        flex-direction: column;
+        gap: 0;
+
+    }
+    .appLink{
+        width: 100%;
+        height: fit-content;
+        gap: 0;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: space-evenly;
+    }
+    .links{
+        justify-content: space-between;
+        padding: 2.6rem 0 0 .5rem;
+    }
+    .image img{
+        width: 100%;
+        min-width: 17rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

@@ -1,11 +1,39 @@
 :root {
   font-size: 12px;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  ::-webkit-scrollbar{
-    display: none;
+  
 }
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    ::-webkit-scrollbar{
+      display: none;
+    }
+
+  input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+  }
+  #datetime-input {
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: left;
+      color: #000;
+      flex-grow: 1;
+      background-color: transparent;
+  }
 
   html,
   body {

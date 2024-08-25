@@ -1,0 +1,47 @@
+.button{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13.33rem;
+    height: 3.01rem;
+    padding: 0;
+    background-color: #E21E26;
+    border-radius: .33rem;
+    color: white;
+    font-size: 1.084rem;
+    font-weight: 600;
+
+}
+.button p{
+    text-align: center;
+}
+.button:hover{
+    background-color: #e21e25a1;
+}
+.bgwhite{
+    background-color: rgba(255, 255, 255, 0.829);
+    border: 1px solid #E21E26;
+    color: red;
+}
+.bgwhite:hover{
+    background-color: rgb(255, 255, 255);
+    border-color: #e21e2554;
+    color: #e21e2594;
+}
+.bgblack{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.bgblack:hover{
+    background-color: rgba(0, 0, 0, 0.637);
+}
+.onlyMobile{
+    display: none;
+}
+
+@media screen  and (max-width:1080px){
+    .onlyMobile{
+        display: flex;
+    }
+}

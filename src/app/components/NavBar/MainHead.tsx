@@ -1,3 +1,5 @@
+
+
 import MenuBar from './MenuBar'
 
 import style from './styles/MainHead.module.css'
@@ -7,6 +9,8 @@ import orgName from '@/../public/icons/nameLogo.svg'
 import orgLogo from '@/../public/icons/logo.svg'
 
 const MainHead = ()=>{
+
+
     return(
     <div className={style.mainHead}> 
         <div className={style.logo}>
@@ -21,8 +25,7 @@ const MainHead = ()=>{
                 className={style.logo}
             />
         </div>
-        <MenuBar />
-
+        <MenuBar/>
     </div>)
 }
 

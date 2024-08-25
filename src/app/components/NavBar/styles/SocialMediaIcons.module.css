@@ -7,3 +7,8 @@
     justify-content: end;
 
 }
+@media screen and (max-width:1180px) {
+    .socialMediaIcons{
+        display: none;
+    }
+}

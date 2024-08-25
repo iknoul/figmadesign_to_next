@@ -1,0 +1,179 @@
+ .popularCar{
+    width: 100%;    
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ .popularCar h1{
+    font-size: 34.74px;
+    font-weight: 400;
+    line-height: 52.11px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+ .popularCar .carContainer{
+    display: flex;
+    /* width: 100%; */
+    gap: 22px;
+    overflow-x: scroll;
+}
+ .popularCar .carItem{
+    display: flex ;
+    width: 754px;
+    height: 100%;
+    position: relative;
+    border: 1px solid #D9D9D9;
+}
+ .popularCar .carItem .carImage{
+    width: 360px;
+    height: 100%;
+}
+ .popularCar .carItem .carImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ .popularCar .carItem .carDetails{
+    width: 394px;
+    padding: 25px 40px 25px 40px;
+}
+ .popularCar .carItem .carName{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: left;
+}
+ .popularCar .carItem .carDescription{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18.5px;
+    text-align: left;
+}
+ .popularCar .carItem .carFeatures{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 96px;
+    gap: 24px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16.5px;
+    letter-spacing: -0.02em;
+    align-items: start;
+}
+ .popularCar .carItem .feature{
+    display: flex;
+    gap: 8px;
+}
+ .popularCar .carItem .bookNow{
+    width: inherit;
+    display: flex;
+    position: absolute;
+    /* padding-left: 40px; */
+    padding-right: 98px;
+    justify-content: space-between;
+    align-items: center ;
+    bottom: 30px;
+}
+ .popularCar .carItem .bookNow .carPrice{
+    font-size: 14.5px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+}
+ .popularCar .carItem .bookNow .bookNow,  .subscribe .leftContainer button{
+    width: 98px;
+    height: 37px;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 15px 8px 15px;
+    background-color: #E21E26;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+@media screen and (max-width :805px) {
+     .popularCar h1{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        padding-left: 16px;
+        text-align: left;
+    }
+    .popularCar .carContainer{
+        height: 333px;
+   }
+    .popularCar .carItem{
+        flex-direction: column;
+        width: 207px;
+   }
+    .popularCar .carItem .carImage{
+        width: 207px;
+   }
+
+    .popularCar .carItem .carDetails{
+        width: 100%;
+        height: 100%;
+        padding: 0 10px;
+        position: relative;
+    }
+    .popularCar .carItem .carName{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+   } 
+    .popularCar .carItem .carFeatures{ 
+        position: absolute;
+        bottom: 72px;   
+        gap: 12px;
+        overflow-x: scroll;
+   }
+    .popularCar .carItem .feature{
+        margin-right: 16px;
+        min-width: 72px;
+        height: 16px;
+        white-space: nowrap;
+   }
+    .popularCar .carItem .carDescription{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15.6px;
+        text-align: left;
+        color: #00000076;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3; /* Limit text to 3 lines */
+        line-clamp: 3; /* For modern browsers */
+        height: calc(3 * 1.2em); /* 3 lines with 1.2em line height */
+        line-height: 1.2em; /* Set your desired line height */
+   }
+    .popularCar .carItem .bookNow{
+        position: absolute;
+        bottom: 8px;
+        flex-direction: column;
+        gap: 4px;
+   }
+    .popularCar .carItem .bookNow .carPrice{
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 19.5px;
+        text-align: left;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        padding-left: 16px;
+   }
+    .popularCar .carItem .bookNow button{
+        height: 38px;
+        width: 128px;
+   }
+    .popularCar .carItem img{
+        width: 100%;
+   }
+}

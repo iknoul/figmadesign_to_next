@@ -1,4 +1,9 @@
+'use client'
+
+import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
+import menuBarIcon from '@/../public/icons/menuBarIcon.svg'
+
 
 import { user } from "@/lib/data"
 import notificationIcon from '@/../public/icons/bellIcon.svg'
@@ -6,22 +11,49 @@ import closeIcon from '@/../public/icons/crossIcon.svg'
 
 import style from './styles/MenuBar.module.css'
 
+interface myProps {
+    menuBarVisible ? :boolean;
+    setMenuBarVisible ? :Function;
+}
 const MenuBar = ()=>{
-    return(
-    <div className={style.menuBar}>
-        <div className={style.closeIcon}>
+
+    const [menuBarVisible, setMenuBarVisible] = useState(false)
+    const  menuRef = useRef<HTMLDivElement>(null)
+
+    const handleClickOutSide = (event:MouseEvent)=>{
+        if(menuRef.current && event.target instanceof Node && !menuRef.current.contains(event.target)){
+            setMenuBarVisible(false)
+        }
+    }
+    useEffect(()=>{
+        document.addEventListener('mousedown', handleClickOutSide)
+
+        return(()=>{
+            document.removeEventListener('mousedown', handleClickOutSide)
+        })
+    }, [])
+
+    return(<>
+     <Image 
+            src={menuBarIcon}
+            alt='menuBarIcon'
+            className={style.menuBarIcon}
+            onClick={()=>{setMenuBarVisible(true)}}
+        />
+    <div ref={menuRef} className={`${style.menuBar} ${menuBarVisible ? style.menuBarVisible : ''}`}>
+        <div className={style.closeIcon} onClick={()=>setMenuBarVisible(false)}>
             <Image 
                 src={closeIcon}
                 alt="close"
             />
         </div>
-        <a href="#footer">About</a>
-        <a href="#promotion">Offers</a>
-        <a href="#popularCar">Corporate</a>
-        <a href="#questions">Personal</a>
-        <a href="#locations">Locations</a>
-        <a href="#subscribe" className={style.noBorderBottom}>Contact Us</a>
-        <a href="" className={style.notificationIcon}>
+        <a onClick={()=>setMenuBarVisible(false)} href="#footer">About</a>
+        <a onClick={()=>setMenuBarVisible(false)} href="#promotion">Offers</a>
+        <a onClick={()=>setMenuBarVisible(false)} href="#popularCar">Corporate</a>
+        <a onClick={()=>setMenuBarVisible(false)} href="#questions">Personal</a>
+        <a onClick={()=>setMenuBarVisible(false)} href="#locations">Locations</a>
+        <a onClick={()=>setMenuBarVisible(false)} href="#subscribe" className={style.noBorderBottom}>Contact Us</a>
+        <a onClick={()=>setMenuBarVisible(false)} href="" className={style.notificationIcon}>
             <Image 
                 src={notificationIcon}
                 alt="notification"
@@ -36,7 +68,8 @@ const MenuBar = ()=>{
         <div className={style.loginIcon}>
             <p>Log in/Sign up</p>
         </div>
-    </div>)
+    </div>
+    </>)
 }
 
 export default MenuBar

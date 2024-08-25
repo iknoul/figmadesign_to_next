@@ -19,16 +19,16 @@ const locations = [
 ];
 
 const promotionCarData = [
-    {   src:"./public/images/nissanGtrG.jpg", alt:"nissan Gtr"},
-    {   src:"./public/images/2018-Mitsubishi-ASX-1920x966 1.svg", alt:"2018-Mitsubishi-ASX"},
-    {   src:"./public/images/nissanGtr.jpg", alt:"nissan Gtr"}
+    {   src:"/images/nissanGtrG.jpg", alt:"nissan Gtr"},
+    {   src:"/images/2018-Mitsubishi-ASX-1920x966 1.svg", alt:"2018-Mitsubishi-ASX"},
+    {   src:"/images/nissanGtr.jpg", alt:"nissan Gtr"}
 ]
 
 const carData = [
     {
         name: "Mitsubishi Eclipse",
         description: "Eclipse Cross is a fusion of sharp coupe looks and dynamic SUV mobility with signature Mitsubishi styling, technology and driving confidence.",
-        src: "./public/images/popularCar1.svg",
+        src: "/images/popularCar1.svg",
         features: {
             people: "5 People",
             transmission: "Automatic",
@@ -41,7 +41,7 @@ const carData = [
     {
         name: "Mitsubishi Outlander",
         description: "Outlander offers superior safety features and modern styling.",
-        src: "./public/images/popularCar2.svg",
+        src: "/images/popularCar2.svg",
         features: {
             people: "7 People",
             transmission: "Automatic",
@@ -53,7 +53,7 @@ const carData = [
     {
         name: "Mitsubishi Eclipse",
         description: "Eclipse Cross is a fusion of sharp coupe looks and dynamic SUV mobility.",
-        src: "./public/images/popularCar1.svg",
+        src: "/images/popularCar1.svg",
         features: {
             people: "5 People",
             transmission: "Automatic",
@@ -61,6 +61,25 @@ const carData = [
             ac: "AC"
         },
         price: "AED 2700/ Monthly"
+    },
+    
+];
+
+const rentSteps = [
+    {
+        src0: '/icons/o1Icon.svg',
+        src1: '/icons/locationIconRed.svg',
+        description: 'Select the location. Browse through our available options and find the perfect car to suit your needs'
+    },
+    {
+        src0: '/icons/o2Icon.svg',
+        src1: '/icons/calederIconRed.svg',
+        description:'Choose your desired Pick-Up date and time.'
+    },
+    {
+        src0: '/icons/o3Icon.svg',
+        src1: '/icons/carIconRed.svg',
+        description: 'Make payment and book the car. Select an option to either have the car delivered to your location or pick it up directly from us.'
     }
 ];
 
@@ -117,4 +136,4 @@ const footerNavigationDataB = [
 
 const Areas = ['Dubai', 'Abu Dhabi', 'Sharjah', 'Fujairah', 'Ras Al Khaimah']
 
-export {user, navigationData, locations, promotionCarData, carData, questionData, footerNavigationData, footerNavigationDataB}
+export {user, navigationData, locations, promotionCarData, carData, rentSteps, questionData, footerNavigationData, footerNavigationDataB, Areas}

@@ -1,0 +1,54 @@
+.types{
+    display: flex;
+    height: 20px;
+    align-items: center;
+    gap: 32px;
+
+}
+.typeItem{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.035em;
+}
+.typeItem.active, .typeItem:hover{
+    border-bottom: 1px solid white;
+}
+.types select{
+    width: 169px;
+    height: 29px;
+    border: none;
+    border-radius: 16px;
+    appearance: none; /* Remove default appearance in some browsers */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    padding: 0 16px;
+    background: url('../../../../../public//icons/arrowDownWhite.svg') no-repeat right 16px center; 
+    background-color: rgba(255, 255, 255, 0.247);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.035em;
+    text-align: center;
+
+}
+.types option{
+    background-color: rgba(167, 31, 31, 0.893);
+    text-align: left;
+}
+
+@media screen and (max-width:1080px) {
+    .types{
+        width: 100%;
+        align-items: left;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    
+    }
+    .active, .typeItem:hover{
+        border-bottom: 1px solid rgb(0, 0, 0) !important;
+    }
+    .types select{
+        background: url('../../../../../public//icons/arrowDoenBlack.svg') no-repeat right 16px center;     
+    }
+}

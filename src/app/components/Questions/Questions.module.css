@@ -1,0 +1,52 @@
+ .frequentQuestions{
+    width: 100%;
+    margin: 0 0 96px 0;    
+}
+ .frequentQuestions h1{
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 51px;
+    text-align: center;
+}
+ .frequentQuestions .questionItem{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #CDD6DA40;
+}
+ .frequentQuestions .questionItem:last-child{
+    border-bottom: none;
+}
+ .frequentQuestions .question{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+ .frequentQuestions .question h3{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    text-align: left;
+}
+ .frequentQuestions .answer{
+    color: #252222b5;
+    display: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24.71px;
+    text-align: left;
+    padding-bottom: 24px;
+
+}
+ .frequentQuestions .questionItem:last-child .answer{
+    padding-bottom: 0px;
+}
+.question.active + .answer{
+    display: block;
+}
+@media screen and (max-width: 805px){
+   .frequentQuestions h1{
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+    }
+}

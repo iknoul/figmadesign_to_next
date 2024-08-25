@@ -1,0 +1,22 @@
+.getLinks{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.links{
+    display: flex;
+    gap: .66rem;
+}
+
+@media screen and (max-width:1180px){
+    .links{
+        width: 100%;
+        flex-direction: column;
+    }
+    .links img{
+        width: 100%;
+        min-width: 10rem;
+    }
+}

@@ -1,0 +1,59 @@
+ .location {
+    width: 100%;
+    color: white;
+    height: 325px;
+    padding: 40px 56px;
+    margin: 80px 0 56px 0;
+    text-align: center;
+    background-color: black;
+
+}
+
+ .location h1{
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 51px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+ .location .locations{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+ .locations .locationItem{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 18.81px;
+    font-weight: 400;
+    line-height: 25.62px;
+}
+@media screen and (max-width: 805px){
+    .location{
+        padding: 1.33rem 1.33rem 3rem 1.33rem;
+        height: fit-content;
+    }
+    .location h1{
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;  
+        margin-bottom: 24px;
+    }
+    .locations{
+        row-gap: 24px;
+    }
+    .locations a{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19.07px;
+        text-align: left;
+    }
+}
+@media screen and (max-width: 480px){
+    .location{
+        padding: 1.33rem 0 3rem 1.33rem;
+    }
+}

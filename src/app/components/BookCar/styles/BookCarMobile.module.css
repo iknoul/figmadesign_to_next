@@ -1,0 +1,28 @@
+
+.bookCarMobileWhole{
+    display: none;
+}
+.bookCarMobile{
+    width: 100%;
+    padding: 36px 0;
+    border-radius: 16px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+}
+
+@media screen and (max-width:1080px) {
+    .bookCarMobile{
+        display: flex !important;
+        flex-direction: row !important;
+        gap: .65rem;
+    }
+    .bookCarMobileWhole{
+        width: 100%;
+        display: block;
+    }
+}
+
