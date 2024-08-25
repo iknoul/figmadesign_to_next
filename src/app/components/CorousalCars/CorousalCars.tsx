@@ -18,7 +18,7 @@ const CorousalCars = ()=>{
         const interval = setInterval(autoSlide, 3000);
     
         return () => clearInterval(interval);
-    }, [promotionCarData.length]);
+    }, [slideLength]);
 
 
     return(
