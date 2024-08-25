@@ -9,12 +9,8 @@ interface myProps {
     selectedDate?: string;
     setSelectedDate?: Function;
 }
-const DateTimePicker: React.FC<myProps> = ({selectedDate, setSelectedDate=()=>{}})=>{
 
-    // const formatDate = (dateString:string) => {
-    //     const date = new Date(dateString);
-    //     return date.toISOString().slice(0, 16); // Extracts "YYYY-MM-DDTHH:MM" from ISO string
-    //   };
+const DateTimePicker: React.FC<myProps> = ({selectedDate, setSelectedDate=()=>{}})=>{
 
     return(
     <>
@@ -24,8 +20,6 @@ const DateTimePicker: React.FC<myProps> = ({selectedDate, setSelectedDate=()=>{}
                 alt='calender icon'
             />
             <input 
-                // value={selectedDate ? formatDate(selectedDate) : ''} 
-                // onChange={(e) => setSelectedDate(e.target.value)}
                 type="datetime-local" 
                 id="datetime-input" 
                 placeholder="mm/dd/yyyy __:__ __" 

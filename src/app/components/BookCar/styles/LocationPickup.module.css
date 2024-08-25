@@ -1,6 +1,5 @@
 .location{
     display: flex;
-    width: 100%;
     flex-direction: column;
     gap: .5rem;
 }
@@ -53,6 +52,9 @@
 }
 
 @media screen and (max-width:1080px) {
+    .location{
+        width: 100%;
+    }
     .dataItem{
         width: 100%;
         padding: 0;

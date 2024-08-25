@@ -20,6 +20,9 @@
     justify-content: center;
     gap: 1rem;
 }
+.mobileViewForm{
+    display: none;
+}
 
 @media screen and (max-width:1180px) {
     .SubscribtionMain{
@@ -46,5 +49,21 @@
         min-width: 17rem;
         padding-left: 0;
         padding-right: 0;
+    }
+    .hideOnMobile{
+        display: none;
+    }
+    .mobileViewForm{
+    display: flex;
+    }
+}
+@media screen and (max-width:360px){
+    
+    .appLink{
+        /* margin-bottom: 0; */
+        padding-bottom: 0;
+    }
+    .image img{
+        min-width: 10rem;
     }
 }

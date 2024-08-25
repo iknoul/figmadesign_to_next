@@ -1,7 +1,7 @@
 
 const user = {
     name:"John Doe",
-    notification: 0,
+    notification: 5,
 }
 const navigationData = [
     {   name:"Contact Us", href:"#subscribe"},

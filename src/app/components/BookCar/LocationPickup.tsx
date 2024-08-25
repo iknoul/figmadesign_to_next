@@ -17,8 +17,8 @@ const LocationPickup: React.FC<MyComponentProps>= ({textContent = "Pick Up locat
     const [optionsVisible, setOptionsVisible] = useState(false)
     const  menuRef = useRef<HTMLDivElement>(null)
 
-    
-    const handleOnClick =(e:React.MouseEvent<HTMLButtonElement>)=>{
+    // set selected option to useState
+    const handleOnClick =(e:React.MouseEvent<HTMLParagraphElement>)=>{
         
         const target = e.target as HTMLButtonElement;
         setOptionsVisible(false)
@@ -56,7 +56,7 @@ const LocationPickup: React.FC<MyComponentProps>= ({textContent = "Pick Up locat
             {
                 locations.map((item, index)=>{
                     return(
-                    <p className={style.optionItem} onClick={handleOnClick}>
+                    <p key={index} className={style.optionItem} onClick={handleOnClick}>
                         {item.name}
                     </p>)
                 })
