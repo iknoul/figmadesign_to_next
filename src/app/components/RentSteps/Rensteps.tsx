@@ -15,7 +15,11 @@ const RentStep = ()=>{
              rentSteps.map((item, index)=>{
 
                 return(              
+<<<<<<< HEAD
                     <div key={index} className={styles.stepItem}>
+=======
+                    <div className={styles.stepItem}>
+>>>>>>> f8dc0b9dd11c46136d007793df00e10cb0f32ddd
 
                         <Image 
                             src={item.src0}

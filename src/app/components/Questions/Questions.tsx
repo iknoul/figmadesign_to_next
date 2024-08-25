@@ -22,7 +22,11 @@ const Questions = ()=>{
                 questionData.map((item, index)=>{
                     
                     return(
+<<<<<<< HEAD
                         <div key={index} className={styles.questionItem} onClick={()=>toggleActive(index)}>
+=======
+                        <div className={styles.questionItem} onClick={()=>toggleActive(index)}>
+>>>>>>> f8dc0b9dd11c46136d007793df00e10cb0f32ddd
                             <div className={`${styles.question} ${activeIndex === index ? styles.active : ''}`}>
                                 <h3>{item.question}</h3>
                                 <Image 
