@@ -5,7 +5,7 @@ import styles from './RentStep.module.css'
 import Image from 'next/image'
 
 
-const RentStep = ()=>{
+const RentStep:React.FC = ()=>{
 
     return(
     <div className={styles.rentSteps}>
@@ -15,11 +15,7 @@ const RentStep = ()=>{
              rentSteps.map((item, index)=>{
 
                 return(              
-<<<<<<< HEAD
                     <div key={index} className={styles.stepItem}>
-=======
-                    <div className={styles.stepItem}>
->>>>>>> f8dc0b9dd11c46136d007793df00e10cb0f32ddd
 
                         <Image 
                             src={item.src0}
