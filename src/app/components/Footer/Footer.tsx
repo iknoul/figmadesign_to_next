@@ -114,7 +114,7 @@ const Footer = ()=>{
                 footerNavigationDataB.map((item, index)=>{
 
                     return(
-                    <a className={styles.navItem} href={item.href}>
+                    <a key={index} className={styles.navItem} href={item.href}>
                         {item.text}
                     </a>)
                 })

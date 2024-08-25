@@ -47,7 +47,7 @@ const CorousalCars = ()=>{
                 {
                     promotionCarData.map((item, index)=>{
                         return(
-                            <span className={slide === index ? `${styles.indicator} ${styles.active}` :styles.indicator}>
+                            <span key={index} className={slide === index ? `${styles.indicator} ${styles.active}` :styles.indicator}>
 
                             </span>
                         )
