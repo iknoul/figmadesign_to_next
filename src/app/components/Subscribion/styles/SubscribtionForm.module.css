@@ -60,5 +60,10 @@
   .inputs input{
     width: 100%;
   }
-  
+  .subscribionForm h3{
+      font-size: 16px;
+      font-weight: 400;
+      text-align: left;
+
+  }
 }
