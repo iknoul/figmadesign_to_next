@@ -13,8 +13,36 @@
     position: relative;
 }
 
+ .bookCarMain .chat{
+    border: none;
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    width: 48px;
+    height: 45px;
+    margin-right: -64px;
+    position: absolute;
+    border-radius: 50% 0 0 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+}
+ .bookCarMain .chat:hover{
+    transform: scale(1.07);
+}
+ .bookCarMain .call{
+    margin-top: -49px;
+}
+ .bookCarMain .bot{
+    margin-top: 49px;
+}
+
 @media screen and (max-width:1080px) {
-    .bookCarMain > :not(:last-child) {
+    .bookCarMain > :not(:last-child,  .chat) {
         display: none;
+    }
+    .bookCarMain .chat{
+        margin-right: -32px !important;
     }
 }
