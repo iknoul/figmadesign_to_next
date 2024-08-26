@@ -143,6 +143,12 @@
     .footer .top .navs strong,  .footer .top .navs div:last-child{
         display: none;
     }
+    .navs .topNavs{
+        justify-content: center;
+    }
+    .footer .top .navs .topNavs .navItem{
+        width: fit-content;
+    }
     .footer .orgCompaniesMobile{
         color: white;
         width: 100%;
