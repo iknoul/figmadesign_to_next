@@ -99,6 +99,11 @@
 .footer .orgCompaniesMobile{
     display: none;
 }
+.orgCompaniesMobileCardContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .orgCompaniesMobileCard{
     display: flex;
     padding: .5rem;

@@ -120,11 +120,13 @@ const Footer = ()=>{
                 })
             }
             
-            <div className={styles.orgCompaniesMobileCard}>
-                <Image 
-                    src={orgCompaniesMobileImage}
-                    alt='secure card 2'
-                />
+            <div className={styles.orgCompaniesMobileCardContainer}>
+                <div className={styles.orgCompaniesMobileCard}>
+                    <Image 
+                        src={orgCompaniesMobileImage}
+                        alt='secure card 2'
+                    />
+                </div>
             </div>
         </div>
         <p className={styles.bottom}>
